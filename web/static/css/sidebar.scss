@@ -1,0 +1,19 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+ .sidebar {
+   height: 100%;
+   padding-right: 0;
+ }
+
+ .sidebar li {
+   border: 0 #f2f2f2 solid;
+   border-bottom-width: 1px;
+   width: 100%;
+   a {
+    border-radius: 0;
+   }
+ }
