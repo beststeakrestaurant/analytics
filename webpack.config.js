@@ -1,5 +1,6 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var CopyWebpackPlugin = require("copy-webpack-plugin");
+var ManifestPlugin = require('webpack-manifest-plugin');
 var webpack = require("webpack");
 var autoprefixer = require('autoprefixer');
 var precss       = require('postcss');
@@ -58,6 +59,10 @@ module.exports = {
     new webpack.optimize.CommonsChunkPlugin("js/common.bundle.js"),
     new CopyWebpackPlugin([
       { from: "./web/static/assets" }
-    ])
+    ]),
+    new ManifestPlugin({
+      fileName: 'manifest.json',
+      basePath: '/priv/static'
+    })
   ]
 };
