@@ -44,7 +44,6 @@
   },
   "scripts": {
     "compile": "webpack -p",
-    "postinstall": "webpack -p",
     "lint": "./node_modules/.bin/eslint priv/static/js/app.js"
   },
   "eslintConfig": {
