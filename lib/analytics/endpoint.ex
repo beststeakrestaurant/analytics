@@ -35,5 +35,6 @@ defmodule Analytics.Endpoint do
     key: "_analytics_key",
     signing_salt: "9THxoPvT"
 
+  plug Corsica, origins: "*"
   plug Analytics.Router
 end

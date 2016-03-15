@@ -8,7 +8,6 @@ config :phoenixapi, Phoenixapi.Endpoint,
 
 config :logger, level: :error
 
-# Configure your database
 config :phoenixapi, Phoenixapi.Repo,
   adapter: Ecto.Adapters.Postgres,
   url: System.get_env("DATABASE_URL"),
