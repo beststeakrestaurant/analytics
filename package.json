@@ -44,6 +44,8 @@
     "webpack": "^1.12.14"
   },
   "scripts": {
+    "compile": "./node_modules/webpack/bin/webpack.js -p",
+    "postinstall" : "./node_modules/webpack/bin/webpack.js -p",
     "lint": "./node_modules/.bin/eslint priv/static/js/app.js"
   },
   "eslintConfig": {
