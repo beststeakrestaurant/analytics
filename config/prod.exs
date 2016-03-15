@@ -1,6 +1,6 @@
 use Mix.Config
 
-config :phoenixapi, Phoenixapi.Endpoint,
+config :analytics, Analytics.Endpoint,
   http: [port: {:system, "PORT"}],
   url: [host: "dinchi-analytics-phoenix.herokuapp.com", port: 80],
   cache_static_manifest: "priv/static/manifest.json",
@@ -8,7 +8,7 @@ config :phoenixapi, Phoenixapi.Endpoint,
 
 config :logger, level: :error
 
-config :phoenixapi, Phoenixapi.Repo,
+config :analytics, Analytics.Repo,
   adapter: Ecto.Adapters.Postgres,
   url: System.get_env("DATABASE_URL"),
   ssl: true,
