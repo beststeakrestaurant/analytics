@@ -44,8 +44,8 @@
     "webpack": "^1.12.14"
   },
   "scripts": {
-    "compile": "./node_modules/webpack/bin/webpack.js -p",
-    "postinstall" : "./node_modules/webpack/bin/webpack.js -p",
+    "compile": "webpack -p",
+    "postinstall" : "webpack -p",
     "lint": "./node_modules/.bin/eslint priv/static/js/app.js"
   },
   "eslintConfig": {
@@ -54,7 +54,7 @@
     }
   },
   "engines": {
-    "node": "5.7.1",
-    "npm": "~3.8.0"
+    "node": "5.8.0",
+    "npm": "~3.8.1"
   }
 }
